@@ -1,0 +1,52 @@
+.VModal {
+    max-width: 768px;
+    width: 100%;
+    padding: 20px;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e9e9e9;
+    margin: 20px auto;
+    z-index: 10000;
+    position: relative;
+    transition: 1s ease;
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    // OTHER STYLES
+    .Tsds-english__application__filter {
+        float: none!important;
+    }
+}
+
+.VModal-placeholder {
+    z-index: 9999;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s ease;
+    width: 100%;
+    height: 100%;
+
+    &--hidden {
+        display: none;
+    }
+
+    &--hide {
+        opacity: 0;
+
+        .VModal {
+            transform: translateY(-20px);
+        }
+    }
+}

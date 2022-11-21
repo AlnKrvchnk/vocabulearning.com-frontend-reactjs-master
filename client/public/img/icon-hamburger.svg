@@ -1,0 +1,8 @@
+<svg id="Group_16" data-name="Group 16" xmlns="http://www.w3.org/2000/svg" width="30.001" height="22.001" viewBox="0 0 30.001 22.001">
+  <g id="Group_16-2" data-name="Group 16" transform="translate(0 0)">
+    <rect id="Rounded_Rectangle_12" data-name="Rounded Rectangle 12" width="30" height="2" rx="1" fill="#78af60"/>
+    <path id="Rounded_Rectangle_12_copy" data-name="Rounded Rectangle 12 copy" d="M391,174h28a1,1,0,0,1,0,2H391a1,1,0,0,1,0-2Z" transform="translate(-390 -164)" fill="#78af60"/>
+    <rect id="Rounded_Rectangle_12_copy_2" data-name="Rounded Rectangle 12 copy 2" width="30" height="2" rx="1" transform="translate(0 20)" fill="#78af60"/>
+  </g>
+  <path id="Color_Overlay" data-name="Color Overlay" d="M1,22a1,1,0,0,1,0-2H29a1,1,0,0,1,0,2ZM1,12a1,1,0,0,1,0-2H29a1,1,0,0,1,0,2ZM1,2A1,1,0,0,1,1,0H29a1,1,0,1,1,0,2Z" fill="#999"/>
+</svg>

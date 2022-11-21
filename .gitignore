@@ -1,0 +1,6 @@
+/client/node_modules/
+/client/.idea/
+/node_modules/
+/.vscode/
+/server/node_modules/
+.idea/

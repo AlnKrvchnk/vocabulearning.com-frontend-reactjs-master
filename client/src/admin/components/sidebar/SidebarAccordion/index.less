@@ -1,0 +1,31 @@
+.fingman_title_item {
+  color: #607D8B;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fingman_title_item .fingman_icon {
+  width: 12px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 11px;
+}
+.fingman_title_item .fingman_icon img {
+  width: 12px;
+  height: 12px;
+  transition: all 0.3s ease-in;
+  transform: rotate(90deg);
+}
+.fingman_title_item .fingman_icon img.fingman_title_item--open,
+.fingman_icon.fingman_title_item--open img,
+.fingman_title_item--open .fingman_icon img {
+  transform: rotate(270deg);
+}
+
+.fingman_icon_rotate {
+  transform: rotate(90deg);
+}

@@ -1,0 +1,89 @@
+.HighLightModal {
+    & .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+            & .row {
+                width: 100%;
+            }
+    }
+    &__grade {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(146, 214, 161);
+        box-shadow: 1px 2px 15px rgb(163, 212, 174);
+    }
+    &__content {
+        height: auto;
+        &__item {
+            width: 100%;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-top: 1px solid #dee2e6;
+            border-bottom: 1px solid #dee2e6;
+        }
+        &__block {
+            margin-right: 60px;
+            & p {
+                font-size: 16px;
+            }
+            & .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #222222 !important;
+                background: transparent !important;
+                border-radius: 3px;
+                text-align: center;
+                width: 170px;
+                height: 35px;
+                line-height: 35px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #222222;
+                transition: all .5s ease-in;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #9AD0F5;
+                }
+                & i {
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+            }
+            & .card {
+                font-size: 16px;
+                border: none !important;
+                box-shadow: none;
+            }
+        }
+    }
+    & table {
+        & .modal__audio__btn {
+            display: block;
+            border: 1px solid #222222;
+            border-radius: 3px;
+            text-align: center;
+            width: 250px;
+            height: 35px;
+            line-height: 18px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #222222;
+            transition: all .5s ease-in;
+            &:hover {
+                cursor: pointer;
+                background-color: #9AD0F5;
+            }
+        }
+    }
+}
+.btn.audio--active {
+    background-color: #9ad0f5 !important;
+}

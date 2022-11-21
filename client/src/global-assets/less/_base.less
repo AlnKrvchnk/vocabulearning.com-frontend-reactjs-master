@@ -1,0 +1,316 @@
+@import "./_variables.less";
+
+*::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+
+.flex-between-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flex-start-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.flex-start-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex-between-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flex-end-start {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-5 {
+    margin-top: 2rem !important;
+}
+.mb-5 {
+    margin-bottom: 2rem !important;
+}
+
+.height--0 {
+    height: 0px !important;
+}
+.height--auto {
+    height: auto !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+.slick-list {
+    overflow-y: visible;
+}
+
+.slick-prev,
+.slick-next {
+
+    &:before {
+        font-size: 20px;
+        color: #000;
+    }
+
+    width: auto;
+    height: auto;
+    padding: 5px;
+    z-index: 999;
+    background: white;
+    box-shadow: 0px 0px 5px #c2c2c2;
+}
+
+div[style] {
+    -webkit-user-drag: none;
+    user-select: auto;
+}
+
+.textarea.materialize-textarea {
+    min-height: 5rem!important;
+}
+
+.card.course-item {
+    height: auto !important;
+    background: transparent;
+    .card-image {
+        max-height: 200px!important;
+        border-radius: 10px;
+        @media (max-width: 767.98px) {
+            width: 100% !important;
+        }
+        @media (max-width: 575.98px) {
+            height: auto !important;
+            width: 100%;
+            & img {
+                min-height: 200px;
+            }
+        }
+        @media (max-width: 374.98px) {
+            max-height: 70px !important;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.materialize-textarea {
+    height: auto;
+}
+
+.def-select {
+    z-index: 999;
+}
+
+.total_loader_application {
+    opacity: .6;
+    z-index: 9999;
+}
+
+.tapping-scrolling {
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .8;
+}
+
+.global-loader {
+    position: fixed;
+    background: @white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: @base-transition;
+    opacity: 1;
+
+    &.hidden {
+        opacity: 0!important;
+    }
+}
+
+.sidenav {
+    z-index: 10000!important;
+}
+
+
+
+.Tsds__modal {
+    max-height: 95%;
+    &--book-reader {
+        width: 90%!important;
+        height: 90vh;
+        top: 5% !important;
+        & .wrapper {
+            width: 100%;
+            & .reader__container {
+                max-width: 100%;
+                margin-top: 0px;
+                & .row {
+                    & .col-md-12 {
+                        & .row {
+                            & .col {
+                                width: 100%;
+                                & .reader__navbar {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    & ul.navbar-nav {
+                                        height: 35px;
+                                        color: #222222;
+                                        @media (max-width: 575.98px) {
+                                            width: 49% !important;
+                                            padding-left: 30px;
+                                        }
+                                        & li {
+                                            height: 35px;
+                                            line-height: 35px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        & footer {
+                            & .container {
+                                width: 100%;
+                                & .row {
+                                    & .col-md-12 {
+                                        & .reader__range {
+                                            padding-left: 15px;
+                                            padding-right: 15px;
+                                            & p {
+                                                margin-top: 0px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidenav-trigger {
+    z-index: 9999!important;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    i {
+        color: @white;
+        font-size: 30px;
+    }
+}
+
+.sound-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    background: url('/img/icons/sound.svg') no-repeat center center;
+    background-size: cover;
+
+    &--active {
+        background: url('/img/icons/sound-active.svg') no-repeat center center!important;
+        background-size: cover!important;
+    }
+}
+
+.app-panel-control {
+    position: fixed;
+    background: white;
+    top: 100px;
+    right: 0;
+    box-shadow: 0px 5px 5px #e9e9e9;
+
+    &__title {
+        font-size: 16px;
+        padding: 5px 15px;
+        display: block;
+        border-bottom: 1px solid @light-blue;
+    }
+
+    a {
+        cursor: pointer;
+        display: block;
+        padding: 5px 15px;
+        transition: @base-transition;
+
+        &:hover {
+            background: @light-blue;
+        }
+    }
+}
+
+.Tsds-english__page--index {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+// Snippets
+.text-danger {color: red}
+.text-success {color: @green}
