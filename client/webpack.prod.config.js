@@ -1,6 +1,7 @@
 const path = require('path');
 const Config = require('./config/index');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require("terser-webpack-plugin");
 
 /**
  * Webpack config
@@ -44,11 +45,28 @@ module.exports = {
                 ]
             },
             {
+               
+
                 test: /\.less$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
-                    'less-loader'
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            url: false
+                        }
+                    },
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            lessOptions: {
+                                relativeUrls: false,
+                                javascriptEnabled: true,
+                            }
+                        }
+                    }
                 ]
             },
             {

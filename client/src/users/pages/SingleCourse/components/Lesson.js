@@ -337,7 +337,7 @@ export default class Lesson extends React.Component {
                     removeWordHint(item)
                     setColorInput(item, "#26a69a")
                 }else{
-                    item.nextSibling.nextSibling.style.display='block'
+                    item.nextSibling.nextSibling && (item.nextSibling.nextSibling.style.display='block')
                 }
                     
                 
